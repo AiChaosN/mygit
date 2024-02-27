@@ -26,7 +26,9 @@ https://github.com/UNSW-database/DB_JIT_Benchmark/tree/main/result
 ## 运行方法
 ### 环境变量和依赖安装
 - Fast way:复制下面的命令到终端执行
-  - ```sudo script.sh```
+  ```
+  sudo script.sh
+  ```
 - Or 自己一个一个配置：
   Clang 14
   
@@ -53,7 +55,9 @@ https://github.com/UNSW-database/DB_JIT_Benchmark/tree/main/result
 
 ### 测试脚本运行
 1. 生成测试数据：这步骤将依次执行Native，LLVM，WASM并产生.csv数据文件
-```sh -x ./run.sh```
+```
+sh -x ./run.sh
+```
 
 
 2. 通过以下.py文件来打印出各个编译器的运行时间对比图：
@@ -62,11 +66,17 @@ https://github.com/UNSW-database/DB_JIT_Benchmark/tree/main/result
 python PG_auto_execution.py
 ```
 
-```python hyper_auto_execution.py```
+```
+python hyper_auto_execution.py
+```
 
-```python mutable_auto_execution.py```
+```
+python mutable_auto_execution.py
+```
 
-```python noisepage_auto_execution.py```
+```
+python noisepage_auto_execution.py
+```
 
 
 ### 做的好！结果图在result目录下，如下图所示：
