@@ -58,7 +58,9 @@ https://github.com/UNSW-database/DB_JIT_Benchmark/tree/main/result
 
 2. 通过以下.py文件来打印出各个编译器的运行时间对比图：
 
-```python PG_auto_execution.py```
+```
+python PG_auto_execution.py
+```
 
 ```python hyper_auto_execution.py```
 
